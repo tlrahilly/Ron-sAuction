@@ -1,0 +1,276 @@
+/*!
+Theme Name: auction house special
+Author: Tessa Rahilly
+Description: Custom theme for Ron's Auction House
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: auction-house-special
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+auction house special is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4{
+  font-family: 'Oswald', sans-serif;
+}
+.container-fluid{
+  padding: 0;
+}
+.row{
+  margin: 0;
+}
+#navbarSupportedContent{
+  justify-content: flex-end;
+}
+.navbar{
+  padding: 1rem 7em;
+  background-color: #f5f5f50d;
+  box-shadow: 0px 0px 5px 0px #bcbcbc;
+}
+.navbar a{
+  color: #424242;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.navbar a:hover{
+  text-decoration: none;
+  color: #0877c8;
+}
+.menu-item{
+  margin: 0 1em;
+}
+.menu-item:first-of-type{
+  margin-left: 0;
+}
+.menu-item:last-of-type{
+  margin-right: 0;
+}
+header .col:first-of-type {
+	padding: 1.7em 1.5em;
+	left: 7%;
+	z-index: 2;
+	background-color: #fff;
+	height: max-content;
+	margin-top: 5em;
+}
+header .col:last-of-type{
+  padding: 0;
+}
+main{
+  background-color: #efefef;
+}
+section{
+  background-color: #fff;
+  margin: 0 2em;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+/* headlines with lines */
+.decorated, .decorated2{
+     overflow: hidden;
+     text-align: center;
+ }
+ .decorated2{
+   font-size: 25px;
+ }
+.decorated > span, .decorated2 > span{
+    position: relative;
+    display: inline-block;
+    width: 500px;
+}
+.decorated2 > span{
+  width: 136px;
+}
+.decorated > span:before, .decorated > span:after, .decorated2 > span:before, .decorated2 > span:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 1px solid #b7b7b7;
+    width: 115px; /* half of limiter*/
+    margin: 0 20px;
+}
+.decorated2 > span:before, .decorated2 > span:after{
+  width: 480px; /* half of limiter*/
+}
+.decorated > span:before, .decorated2 > span:before{
+    right: 100%;
+}
+.decorated > span:after, .decorated2 > span:after{
+    left: 100%;
+}
+.threep #marginb{
+  margin-bottom: 6em;
+}
+.threep .row{
+  padding: 0 5em;
+}
+.upcoming{
+  margin: 6em 5em 0 5em;
+}
+.upcoming-row{
+  margin-top: 3em;
+}
+.upcoming h3{
+  border-bottom: 1.5px solid #b7b7b7;
+  width: max-content;
+}
+.upcoming-block{
+  width: 250px;
+  margin: 0 .3em;
+}
+.upcoming-block img{
+  width: 250px;
+  height: 160px;
+}
+.upcoming-block a{
+  color: #000;
+}
+.upcoming-block a:hover {
+}
+.upcoming-block .block-info{
+  padding: 8px 10px 0 10px;
+}
+.upcoming-home .upcoming-block:first-of-type{
+  margin-left: 0;
+}
+.upcoming-home .upcoming-block{
+  margin: 0 1.1em;
+}
+.headerimg{
+  width: 100%
+}
+footer{
+  background-color:#efefef;
+  border-top: 1px solid #b7b7b7;
+  margin-top: 3em;
+  font-size: 12px;
+}
+footer .row{
+  margin-top: 1em;
+}
+footer .col:nth-of-type(2){
+  text-align: center;
+}
+footer .col:last-of-type{
+  text-align: right;
+}
+.about .main{
+  margin: 2em 5.5em 0 5.5em;
+}
+.about .main img{
+  width: 500px;
+  height: 333px;
+}
+#item-sec{
+  padding: 3em 0;
+}
+#btn-margin{
+  margin: 0 6.4em;
+}
+.btn-secondary{
+  background-color: #aaa;
+  border-color: #aaa;
+}
+.btn-secondary:hover{
+   background-color: #0877c8;
+   border-color: #0877c8;
+}
+#item-details h1{
+  font-size: 2em;
+}
+.lotnumber, .lotnumber-home{
+  color: #808080;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.lotnumber-home p{
+  font-size: 10px;
+  margin-bottom: .6em;
+}
+.title h1{
+  text-transform: uppercase;
+}
+.title-home h1{
+  font-size: 25px;
+}
+.subtitle{
+  font-size: 14px;
+  border-bottom: 1px solid #b7b7b7;
+  margin-bottom: 2em;
+  font-weight: bold;
+}
+.item-bullets{
+  margin-bottom: 2em;
+}
+.subtitle .col{
+  padding: 0;
+}
+.subtitle p{
+  margin: .5em 0;
+}
+.subtitle p:last-child {
+  text-align: right;
+}
+.item-bullets p{
+  margin-bottom: .5em;
+}
+.item-description h2{
+  font-size: 20px;
+  font-weight: bold;
+}
+.upcoming-block .block-info .subtitle {
+  border: none;
+}
+#prev a{
+	color: #fff;
+	background-color: #aaa;
+	padding: 5px 10px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+  border-right: .5px solid #fff;
+}
+#next a{
+	color: #fff;
+	background-color: #aaa;
+	padding: 5px 10px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+  border-left: .5px solid #fff;
+}
+.archieve{
+  padding-top: 3em;
+}
+.searchandfilter ul{
+  padding-left: 4px;
+}
+.searchandfilter .postform{
+  width: 150px;
+}
+.searchandfilter li:first-of-type input{
+  width: 180px;
+}
+.searchandfilter li:last-of-type input{
+  margin-top: 1em;
+}
+.searchandfilter h4{
+  font-size: 18px;
+  text-transform: uppercase;
+}
+#none{
+  margin: 0 auto;
+  text-align: center;
+}
